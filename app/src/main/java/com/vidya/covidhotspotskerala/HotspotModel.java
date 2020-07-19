@@ -1,14 +1,14 @@
 package com.vidya.covidhotspotskerala;
 
-public class hotspots {
+public class HotspotModel {
     private String district;
     private String lsgd;
     private String wards;
 
-    public hotspots() {
+    public HotspotModel() {
     }
 
-    public hotspots(String district, String lsgd, String wards) {
+    public HotspotModel(String district, String lsgd, String wards) {
         this.district = district;
         this.lsgd = lsgd;
         this.wards = wards;
