@@ -12,23 +12,20 @@
         android:id="@+id/district"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat"
-        android:text="District"
+        android:text="@string/district"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <TextView
         android:id="@+id/lsgd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat"
-        android:text="LSGD" />
+        android:text="@string/lsgd" />
 
     <TextView
         android:id="@+id/wards"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat"
-        android:text="Wards"
+        android:text="@string/wards"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
 

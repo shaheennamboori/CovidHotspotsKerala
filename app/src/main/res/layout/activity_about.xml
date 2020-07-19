@@ -22,7 +22,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:fontFamily="@font/montserrat_bold"
+                android:fontFamily="@font/montserrat"
                 android:text="Developed by :"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 

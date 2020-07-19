@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     List<HotspotModel> hotspotsList;
     HotspotListAdapter adapter;
+    private ProgressBar spinner;
 
     private static String URL_HOTSPOTS = "https://keralastats.coronasafe.live/hotspots.json";
 //    Button refreshBtn;
@@ -75,7 +76,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        spinner = (ProgressBar)findViewById(R.id.progressBar1);
+        spinner.setVisibility(View.VISIBLE);
         recyclerView = findViewById(R.id.myrecycleview);
         hotspotsList = new ArrayList<>();
 //        refreshBtn = findViewById(R.id.refresh_button);
@@ -124,6 +126,7 @@ public class MainActivity extends AppCompatActivity {
                         }
 
                         adapter = new HotspotListAdapter(MainActivity.this,hotspotsList);
+                        spinner.setVisibility(View.GONE);
                         recyclerView.setAdapter(adapter);
                     }
                 }, new Response.ErrorListener() {
