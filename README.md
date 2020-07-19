@@ -1,6 +1,7 @@
 # CovidHotspotsKerala
-Its an android app which lists all the covid hotspot wards in kerala
-A search view is also included for the easiness of using it.
+
+Its an android app which lists all the covid hotspot wards in kerala.
+
 
 The source I used to design this apk is the official source from kerala govt :-
 https://keralastats.coronasafe.live/hotspots.json
