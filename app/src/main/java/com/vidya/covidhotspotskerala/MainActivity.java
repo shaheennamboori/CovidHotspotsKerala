@@ -12,6 +12,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     HotspotListAdapter adapter;
 
     private static String URL_HOTSPOTS = "https://keralastats.coronasafe.live/hotspots.json";
-    Button refreshBtn;
+//    Button refreshBtn;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -66,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.myrecycleview);
         hotspotsList = new ArrayList<>();
-        refreshBtn = findViewById(R.id.refresh_button);
+//        refreshBtn = findViewById(R.id.refresh_button);
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         recyclerView.setHasFixedSize(true);
 
@@ -77,9 +78,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        refreshBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+//        refreshBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+        ProgressBar progressBar = new ProgressBar(getApplicationContext());
                 RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
                 JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, URL_HOTSPOTS, null, new Response.Listener<JSONObject>() {
                     @Override
@@ -124,8 +126,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-                    }
-                });
+//                    }
+//                });
 
 
     }
