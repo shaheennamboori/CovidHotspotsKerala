@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg"
+    android:layout_margin="5dp"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/district"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="District"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <TextView
+        android:id="@+id/lsgd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LSGD" />
+    <TextView
+        android:id="@+id/wards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wards"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+
+
+</LinearLayout>
