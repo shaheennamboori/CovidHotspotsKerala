@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">CovidHotspotsKerala</string>
     <string name="search">Search</string>
+    <string name="content">Its a free android app developed by DSC club of vidya academy of science and technology .It uses the official govt provided resource fro reliable listing of hotspots . To access the source code of the data press the button to the bottom corner of this activity</string>
 </resources>
