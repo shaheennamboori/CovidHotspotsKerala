@@ -1,4 +1,4 @@
-package com.vidya.HotspotsKerala;
+package com.vidya.covidhotspotskerala;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.vidya.HotspotsKerala.R;
 
 public class AboutActivity extends AppCompatActivity {
     private Button sourcecodebtn;

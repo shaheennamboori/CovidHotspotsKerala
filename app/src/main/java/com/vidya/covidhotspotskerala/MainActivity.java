@@ -1,4 +1,4 @@
-package com.vidya.HotspotsKerala;
+package com.vidya.covidhotspotskerala;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
@@ -20,6 +20,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.vidya.HotspotsKerala.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;

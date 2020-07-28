@@ -1,4 +1,4 @@
-package com.vidya.HotspotsKerala;
+package com.vidya.covidhotspotskerala;
 
 public class HotspotModel {
     private String district;
