@@ -1,11 +1,13 @@
-package com.vidya.covidhotspotskerala;
+package com.vidya.HotspotsKerala;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.Filter;
 import android.widget.Filterable;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -18,12 +20,15 @@ public class HotspotListAdapter extends RecyclerView.Adapter<HotspotListAdapter.
 
     LayoutInflater inflater;
     List<HotspotModel> hotspots;
+    Context mcontext;
+
 
     private List<HotspotModel> hotspotscopy;
 
     public HotspotListAdapter(Context ctx, List<HotspotModel> hotspots){
         this.inflater = LayoutInflater.from(ctx);
         this.hotspots = hotspots;
+        this.mcontext = ctx;
         hotspotscopy = new ArrayList<>(hotspots);
     }
 
@@ -37,6 +42,9 @@ public class HotspotListAdapter extends RecyclerView.Adapter<HotspotListAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull HotspotViewHolder holder, int position) {
+
+        holder.container.setAnimation(AnimationUtils.loadAnimation(mcontext,R.anim.myanimation));
+
         holder.districtTitle.setText(hotspots.get(position).getDistrict());
         holder.LSGD.setText(hotspots.get(position).getLsgd());
         holder.Wards.setText(hotspots.get(position).getWards());
@@ -83,13 +91,15 @@ public class HotspotListAdapter extends RecyclerView.Adapter<HotspotListAdapter.
     public class HotspotViewHolder extends RecyclerView.ViewHolder{
 
         TextView districtTitle,LSGD,Wards;
+        LinearLayout container;
 
         public HotspotViewHolder(@NonNull View itemView) {
             super(itemView);
-
+            container=itemView.findViewById(R.id.container);
             districtTitle = itemView.findViewById(R.id.district);
             LSGD = itemView.findViewById(R.id.lsgd);
             Wards = itemView.findViewById(R.id.wards);
+
         }
     }
 }

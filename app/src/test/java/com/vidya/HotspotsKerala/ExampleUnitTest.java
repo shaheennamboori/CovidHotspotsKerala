@@ -1,4 +1,4 @@
-package com.vidya.covidhotspotskerala;
+package com.vidya.HotspotsKerala;
 
 import org.junit.Test;
 
