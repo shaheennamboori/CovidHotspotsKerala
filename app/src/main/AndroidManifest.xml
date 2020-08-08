@@ -11,9 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.vidya.HotspotsKerala.com.vidya.covidhotspotskerala.AboutActivity"
+        <activity android:name="com.vidya.HotspotsKerala.AboutActivity"
             android:label="About"></activity>
-        <activity android:name="com.vidya.HotspotsKerala.com.vidya.covidhotspotskerala.MainActivity">
+        <activity android:name="com.vidya.HotspotsKerala.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
