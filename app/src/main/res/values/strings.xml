@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">HotspotsKerala</string>
     <string name="search">Search</string>
-    <string name="content">Its a free android app developed by DSC club of vidya academy of science and technology .It uses the official govt provided resource fro reliable listing of hotspots . To access the source code of the data press the button to the bottom corner of this activity</string>
+    <string name="content">Its a free android app developed by DSC club of vidya academy of science and technology .It uses the free API listing ,which collects data from official sources (credited in github source code) . To access the source code of the data press the button to the bottom corner of this activity</string>
     <string name="district">District</string>
     <string name="lsgd">LSGD</string>
     <string name="wards">Wards</string>
