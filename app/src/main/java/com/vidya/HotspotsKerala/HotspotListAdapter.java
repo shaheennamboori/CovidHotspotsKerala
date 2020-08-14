@@ -70,7 +70,7 @@ public class HotspotListAdapter extends RecyclerView.Adapter<HotspotListAdapter.
             }else {
                 String filterPattern = charSequence.toString().toLowerCase().trim();
                 for (HotspotModel hotspot : hotspotscopy){
-                    if (hotspot.getDistrict().toLowerCase().contains(filterPattern)){
+                    if (hotspot.getDistrict().toLowerCase().contains(filterPattern) || hotspot.getLsgd().toLowerCase().contains(filterPattern)){
                         filteredList.add(hotspot);
                     }
                 }
